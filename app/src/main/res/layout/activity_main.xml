@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <EditText
+        android:id="@+id/workout_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Workout Duration (Seconds)"
+        android:inputType="number"
+        android:maxWidth="470dp"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/rest_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rest Duration (Seconds)"
+        android:inputType="number"
+        android:maxWidth="470dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/startB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="310dp"
+        android:minHeight="48dp"
+        android:text="Start"
+        app:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/stopB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="310dp"
+        android:minHeight="48dp"
+        android:text="Stop"
+        app:backgroundTint="#E91E63" />
+
+    <!--<TextView
+        android:id="@+id/workout_time_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp" />-->
+
+    <TextView
+        android:id="@+id/time_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="38dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:id="@+id/progress_bar"
+        android:max="100"
+        android:progress="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
